@@ -57,7 +57,7 @@ module.exports = {
       options: {
         workboxConfig: {
           globPatterns: ["**/icon-path*"],
-          precachePages: [`/*`],
+          precachePages: [`/contact`, `/power`, `/manage`, `/safe`, `/team`],
         },
       },
     },
