@@ -11,6 +11,7 @@ module.exports = {
     "gatsby-plugin-postcss",
     "gatsby-plugin-sharp",
     "gatsby-plugin-react-helmet",
+    "gatsby-plugin-next-seo",
     "gatsby-plugin-sitemap",
     "gatsby-plugin-offline",
     {
