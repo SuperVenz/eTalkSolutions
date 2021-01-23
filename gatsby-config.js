@@ -4,6 +4,7 @@ module.exports = {
     description:
       "San Diego Web Development Company specializing in progessive web apps for small business ",
     author: "Alec Venzor",
+    siteUrl: "https://etalksolutions.com",
   },
   plugins: [
     `gatsby-plugin-styled-components`,
