@@ -28,6 +28,7 @@ export default function Layout({ pageMeta, children }) {
         <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <meta name="author" content="Alec Venzor" />
+        <html lang="en" />
 
         {/* The rest we set dynamically with props */}
         <meta name="description" content={pageMeta.description} />
