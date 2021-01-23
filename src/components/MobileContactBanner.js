@@ -11,7 +11,7 @@ display:none;
       margin-top:15%;
       margin-bottom:15%;
       margin-left:15%;
-      height:350px;
+      height:60%;
 
 `;
 const Title = style.h1`
@@ -29,13 +29,14 @@ align-self: end;
 background: #288002;
 border-radius: 10px;
 padding:.70em;
-height:20%;
+height:30%;
 display:flex;
 align-items: center;
 justify-content: center;
-margin-left:30%;
-margin-bottom:5%;
-width:40%;
+margin-left:25%;
+margin-top:10%;
+margin-bottom:10%;
+width:50%;
 
 `;
 function MobileContactBanner({ title, text, button }) {
