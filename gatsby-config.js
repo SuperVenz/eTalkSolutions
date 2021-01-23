@@ -59,7 +59,7 @@ module.exports = {
         workboxConfig: {
           globPatterns: ["**/icon-path*"],
         },
-        precachePages: [`/contact`, `/power`, `/manage`, `/safe`, `/team`],
+        precachePages: [`/contact`, `/power`, `/manage`, `/safe`, `/team`, `/`],
       },
     },
     `gatsby-transformer-json`,
