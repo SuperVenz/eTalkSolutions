@@ -13,7 +13,6 @@ module.exports = {
     "gatsby-plugin-react-helmet",
     "gatsby-plugin-next-seo",
     "gatsby-plugin-sitemap",
-    "gatsby-plugin-offline",
     {
       resolve: `gatsby-plugin-google-gtag`,
       options: {
@@ -52,6 +51,8 @@ module.exports = {
         crossOrigin: `use-credentials`, // `use-credentials` or `anonymous`
       },
     },
+    "gatsby-plugin-offline",
+
     {
       resolve: "gatsby-plugin-offline",
       options: {
