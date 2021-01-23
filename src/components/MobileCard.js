@@ -7,7 +7,6 @@ const Div = styled.div`
   @media (max-width: 639px) {
     flex-flow: column nowrap;
     align-items: center;
-    text-align: center;
   }
 `;
 const PicContain = styled.div`
@@ -16,11 +15,14 @@ const PicContain = styled.div`
   width: 60%;
 `;
 const Title = styled.h1`
+  text-align: center;
+
   font-weight: 500;
   font-size: 2rem;
 `;
 const Info = styled.p`
   font-size: 1.25em;
+  line-height: 2;
 `;
 function MobileCard() {
   const data = useStaticQuery(graphql`
@@ -42,7 +44,6 @@ function MobileCard() {
                 sizes
                 src
                 srcSet
-                tracedSVG
               }
             }
           }

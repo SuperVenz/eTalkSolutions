@@ -56,10 +56,14 @@ module.exports = {
     {
       resolve: "gatsby-plugin-offline",
       options: {
-        workboxConfig: {
-          globPatterns: ["**/icon-path*"],
-        },
-        precachePages: [`/contact`, `/power`, `/manage`, `/safe`, `/team`, `/`],
+        precachePages: [
+          `/contact`,
+          `/power`,
+          `/manage`,
+          `/safe`,
+          `/team`,
+          `/*`,
+        ],
       },
     },
     `gatsby-transformer-json`,

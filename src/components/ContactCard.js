@@ -49,7 +49,6 @@ function ContactCard() {
             sizes
             srcSet
             src
-            tracedSVG
           }
         }
       }

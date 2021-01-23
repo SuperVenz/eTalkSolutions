@@ -26,6 +26,8 @@ justify-content: space-between;
 `;
 const Label = style.label`
   margin-bottom:10%;
+  padding-left:3%;
+  padding-top:1%;
   border: 1% solid #A9A8A8;
   border-radius: 10px;
   border-width: 3px;
@@ -36,6 +38,8 @@ const Label = style.label`
   `;
 const LabelCol = style.label`
   margin-bottom:10%;
+    padding-top:1%;
+    padding-left:3%;
    border: 1% solid #A9A8A8;
   border-radius: 10px;
   border-width: 3px;
