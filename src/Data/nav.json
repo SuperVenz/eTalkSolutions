@@ -1,0 +1,5 @@
+[
+  { "tag": "About", "link": "/" },
+  { "tag": "Our Team", "link": "/team" },
+  { "tag": "Contact", "link": "/contact" }
+]

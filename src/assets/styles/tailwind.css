@@ -1,0 +1,9 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+@import "../styles/typography.css";
+.html .body {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: normal;
+}

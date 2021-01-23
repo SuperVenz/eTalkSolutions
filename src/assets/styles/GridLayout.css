@@ -1,0 +1,43 @@
+.layout {
+  font-family: Inter;
+  font-style: normal;
+  font-weight: normal;
+}
+
+@media only screen and (max-width: 600px) {
+  .layout {
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
+  }
+}
+
+@media (min-width: 768px) {
+  .layout {
+    position: relative;
+    display: grid;
+    height: 100vh;
+    width: 100%;
+    grid-template-columns: 20% auto 60%;
+    grid-template-rows: 75px auto 5%;
+    grid-template-areas:
+      "Logo Logo Nav"
+      "Child Child Child"
+      "Tag Tag Tag";
+  }
+  .logo {
+    grid-area: Logo;
+  }
+  .NavTop {
+    grid-area: Nav;
+  }
+  .child {
+    grid-area: Child;
+  }
+  .tag {
+    grid-area: Tag;
+  }
+  .NavSlide {
+    grid-area: Slide;
+  }
+}

@@ -1,0 +1,18 @@
+[
+  {
+    "tag": "Performance",
+    "text": "Lighting fast, pixel perfect, and fully optimized. Everything a small business website should be."
+  },
+  {
+    "tag": "Security",
+    "text": "Without a server or reachable database; say goodbye to malicious requests, DDOS attacks, or accidental exposure."
+  },
+  {
+    "tag": "Scalability",
+    "text": "Our sites don’t require complex operations or an expensive hosting service. When your traffic drops so does your usage costs - Only pay for resources you use."
+  },
+  {
+    "tag": "Accessibility",
+    "text": "We help make the web work for everybody. GatsbyJS is recognized by WebAIM as the most accessible framework."
+  }
+]

@@ -1,0 +1,14 @@
+[
+  {
+    "title": "We Make Modern websites",
+    "text": "Having a web presence in today’s digital landscape is a must. However, a web presence that stands out from the rest is undoubtedly a determining factor to your online success. At eTalk Solutions we understand a modern website should be lightning fast, responsive to any screen, and easy to use. While we develop with performance in mind, we have dedicated designers to ensure the look and feel of your website inspires your visitors and represents your brand.This is all possible using the latest technology in the web industry, GatsbyJS a front end react javascript framework."
+  },
+  {
+    "title": "Safety",
+    "text": "While speed, performance and design are what we all like to think about when it comes to building the best sites on the internet, security is most often overlooked. Malicious users on the web steal personal information, bring down sites, and exploit fundamental security flaws in web servers. eTalk Solution tackles this problem by using new serverless technology to deliver  your websites. No server means no reachable database for malicious requests, DDOS attacks, or accidental exposure.  The security of your digital footprint is something we don’t take for granted."
+  },
+  {
+    "title": "Discover the power of serverless technology",
+    "text": "Serverless computing enables developers to build and deploy applications faster because the need to manage infrastructure like servers and databases is eliminated. The two biggest benefits of serverless computing is allowing developers to focus on the business goals of the code they write and organizations only pay for the computing resources that they actually use."
+  }
+]
