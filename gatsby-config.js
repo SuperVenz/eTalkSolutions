@@ -41,10 +41,26 @@ module.exports = {
     {
       resolve: "gatsby-plugin-manifest",
       options: {
+        name: `eTalk Solutions`,
+        short_name: `eTalk Solution`,
+        start_url: `/`,
+        background_color: `#FFFFFF`,
+        theme_color: `#288002`,
+        display: `standalone`,
         icon: "src/images/icon.png",
+        cache_busting_mode: "none",
+        crossOrigin: `use-credentials`, // `use-credentials` or `anonymous`
       },
     },
-    `gatsby-transformer-json`,
+    {
+      resolve: "gatsby-plugin-offline",
+      options: {
+        workboxConfig: {
+          globPatterns: ["**/icon-path*"],
+          precachePages: [`/*`],
+        },
+      },
+    }`gatsby-transformer-json`,
     {
       resolve: `gatsby-source-filesystem`,
       options: {
