@@ -210,7 +210,7 @@ function ContactForm() {
               />
             </LabelCol>
             <LabelCol>
-              <Text>{name} Whats 10 plus 1?</Text>
+              <Text>Computer check: What is 10 + 1?</Text>
               <Input
                 type="number"
                 placeholder="11"
