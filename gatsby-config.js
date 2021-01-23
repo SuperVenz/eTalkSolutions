@@ -3,7 +3,6 @@ module.exports = {
     title: "eTalk Solutions",
     description:
       "San Diego Web Development Company specializing in progessive web apps for small business ",
-    url: "https://www.etalksolutions.com",
     author: "Alec Venzor",
   },
   plugins: [
