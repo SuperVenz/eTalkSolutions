@@ -14,6 +14,7 @@ const Container = styled.div`
   background: white;
   display: flex;
   flex-flow: row nowrap;
+  padding-top: 1%;
   align-items: center;
   width: 100%;
   justify-content: space-evenly;
