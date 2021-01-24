@@ -16,7 +16,7 @@ const PicContain = styled.div`
 `;
 const Title = styled.h1`
   text-align: center;
-
+  width: 80%;
   font-weight: 500;
   font-size: 2rem;
 `;
