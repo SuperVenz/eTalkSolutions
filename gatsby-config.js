@@ -13,6 +13,7 @@ module.exports = {
     "gatsby-plugin-react-helmet",
     "gatsby-plugin-next-seo",
     "gatsby-plugin-sitemap",
+    "gatsby-plugin-remove-serviceworker",
     {
       resolve: `gatsby-plugin-google-gtag`,
       options: {
@@ -49,21 +50,6 @@ module.exports = {
         icon: "src/images/icon.png",
         cache_busting_mode: "none",
         crossOrigin: `use-credentials`, // `use-credentials` or `anonymous`
-      },
-    },
-    "gatsby-plugin-offline",
-
-    {
-      resolve: "gatsby-plugin-offline",
-      options: {
-        precachePages: [
-          `/contact`,
-          `/power`,
-          `/manage`,
-          `/safe`,
-          `/team`,
-          `/*`,
-        ],
       },
     },
     `gatsby-transformer-json`,

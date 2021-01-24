@@ -44,7 +44,6 @@ const TeamView = () => {
             src
             sizes
             srcSet
-            tracedSVG
           }
         }
         base
@@ -63,9 +62,10 @@ const TeamView = () => {
     <Wrapper>
       <Title>Our Team</Title>
       <Img fluid={data.file.childImageSharp.fluid} />
-      {data.allTeamJson.edges.map((doc) => {
+      {data.allTeamJson.edges.map((doc, i) => {
+        let f = `${i}f`;
         return (
-          <TeamBox>
+          <TeamBox key={f}>
             <TeamTitle>{doc.node.title}</TeamTitle>
             <TeamText>{doc.node.text}</TeamText>
           </TeamBox>

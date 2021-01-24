@@ -9,6 +9,9 @@ import styled from "styled-components";
 const Container = styled.div`
   position: fixed;
   bottom: 0;
+  border-top-width: 2px;
+  margin-top: 0%;
+  background: white;
   display: flex;
   flex-flow: row nowrap;
   align-items: center;

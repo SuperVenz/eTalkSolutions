@@ -23,7 +23,6 @@ function SafeView() {
             sizes
             srcSet
             src
-            tracedSVG
           }
         }
       }
@@ -33,7 +32,7 @@ function SafeView() {
     <Wrapper>
       <InfoView
         title="Safe and Secure for your users. Peace of mind for you."
-        text="Serverless computing enables developers to build and deploy applications faster because the need to manage infrastructure like servers and databases is eliminated. The two biggest benefits of serverless computing is allowing developers to focus on the business goals of the code they write and organizations only pay for the computing resources that they actually use."
+        text="While speed, performance, and design are what we all like to think about when it comes to building the best sites on the internet, security is most often overlooked. Malicious users on the web steal personal information, bring down sites, and exploit fundamental security flaws in web servers. all Solution tackles this problem by using new serverless technology to deliver your websites. No server means no reachable database for malicious requests, DDOS attacks, or accidental exposure.  The security of your digital footprint is something we don’t take for granted."
       />
       <MedContainer>
         <Img fluid={data.file.childImageSharp.fluid} alt="tag" />

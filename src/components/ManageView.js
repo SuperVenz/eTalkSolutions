@@ -21,7 +21,6 @@ function ManageView() {
             sizes
             srcSet
             src
-            tracedSVG
           }
         }
       }
@@ -31,7 +30,7 @@ function ManageView() {
     <div>
       <InfoView
         title="Be in control of your own site"
-        text="World Class technology should work seamlessly with the tools you are already familiar with. Sites built on the Gatsby cloud integrate with CMS platforms like WordPress or Contentful. You can stay in control of your site’s content without having to learn a new interface.Whether you need us to manage your site or you prefer to do it yourself, we’ve got you covered.  "
+        text="World-Class technology should work seamlessly with the tools you are already familiar with. Sites built on the Gatsby cloud integrate with CMS platforms like WordPress or Contentful. You can stay in control of your site’s content without having to learn a new interface. Whether you need us to manage your site or you prefer to do it yourself, we’ve got you covered."
       />
       <Pic>
         <Img

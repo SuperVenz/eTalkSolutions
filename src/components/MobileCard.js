@@ -62,8 +62,9 @@ function MobileCard() {
   return (
     <div className="md:hidden">
       {data.allFile.edges.map((doc, i) => {
+        let s = `${i}s`;
         return (
-          <Div>
+          <Div key={s}>
             <PicContain>
               <Img fluid={doc.node.childImageSharp.fluid} alt="test" />
             </PicContain>

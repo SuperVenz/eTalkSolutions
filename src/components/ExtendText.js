@@ -6,9 +6,12 @@ display:inline-block;
 position: relative;
 margin-left:20%;
 margin-top:1%;
-  @media (max-width: 1300px) {
-padding-bottom:20%;
-  }
+margin-bottom:5%;
+  @media (max-width: 900px) {
+margin-left:0%;
+  };
+
+
 `;
 const Text = style.p` 
 height:3em;

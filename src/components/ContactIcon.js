@@ -61,7 +61,6 @@ function ContactIcon() {
                 sizes
                 src
                 srcSet
-                tracedSVG
               }
             }
           }
@@ -73,7 +72,7 @@ function ContactIcon() {
     <Container>
       {data.allFile.edges.map(({ node }, i) => {
         return (
-          <Wrapper>
+          <Wrapper key={i}>
             <Icon>
               <Img fluid={node.childImageSharp.fluid} />
             </Icon>

@@ -7,7 +7,7 @@ import MobileView from "./MobileView";
 const Phon = styled.div`
   position: fixed;
   left: 0;
-  bottom: 5%;
+  bottom: 17%;
   height: 5%;
   width: 10%;
   @media (max-width: 1300px) {
@@ -33,7 +33,9 @@ const Tab = styled.div`
     display: none;
   }
 `;
-const Container = styled.div``;
+const Container = styled.div`
+  display: flex;
+`;
 
 function ResponsiveView() {
   const data = useStaticQuery(graphql`
@@ -49,13 +51,12 @@ function ResponsiveView() {
           node {
             base
             childImageSharp {
-              fluid(maxWidth: 1200, quality: 90) {
+              fluid(maxWidth: 1200) {
                 aspectRatio
                 base64
                 sizes
                 src
                 srcSet
-                tracedSVG
               }
             }
           }
@@ -68,10 +69,8 @@ function ResponsiveView() {
       <Container className="hidden md:block">
         <InfoView
           title="Responsive websites built to perform and inspire. "
-          text="Having a web presence in today’s digital landscape is a must. However, a web presence that stands out from the rest is undoubtedly a determining factor to your online success. At eTalk Solutions we understand a modern website should be lightning fast, responsive to any screen, and easy to use. While we develop with performance in mind, we have dedicated designers to ensure the look and feel of your website inspires your visitors and represents your brand.
-
-This is all possible using the latest technology in the web industry, GatsbyJS a front end react javascript framework.
- "
+          text="Having a web presence in today’s digital landscape is a must. However, a web presence that stands out from the rest is undoubtedly a determining factor to your online success. At eTalk Solutions we understand a modern website should be lightning fast, responsive to any screen, and easy to use. While we develop with performance in mind, we have dedicated designers to ensure the look and feel of your website inspires your visitors and represents your brand.This is all possible using the latest technology in the web industry, GatsbyJS a front end react javascript framework.
+"
         />
         <Phon>
           <Img
