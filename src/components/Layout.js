@@ -5,6 +5,7 @@ import "../assets/styles/GridLayout.css";
 import style from "styled-components";
 import Helmet from "react-helmet";
 import { GatsbySeo } from "gatsby-plugin-next-seo";
+import { Link } from "gatsby";
 const Tag = style.footer`
 display:none;
  @media (max-width: 768px) {
@@ -80,9 +81,12 @@ export default function Layout({ pageMeta, children }) {
         <meta name="keywords" content={pageMeta.keywords.join(",")} />
       </Helmet>
       <div className="logo flex justify-between items-center  w-full h-24 md:h-32  md:h-full md:border-b-2 sticky top-0 md:static bg-white z-20">
-        <h2 className="flex-grow text-center text-3xl z-20">
-          <Logo className="font-bold">eTalk</Logo>-Solutions
-        </h2>
+        <Link className="flex-grow text-center text-3xl z-20" to="/">
+          <h2>
+            <Logo className="font-bold">eTalk</Logo>
+            -Solutions
+          </h2>
+        </Link>
         <MobileDrop />
       </div>
       <NavTop />
