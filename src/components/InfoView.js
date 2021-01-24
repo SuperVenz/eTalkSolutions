@@ -6,6 +6,9 @@ const Container = styled.div`
   width: 50%;
   margin-top: 6%;
   height: 100%;
+  @media (max-width: 700px) {
+    display: none;
+  }
   @media (max-width: 1450px) {
     padding-bottom: 10%;
   }
@@ -17,6 +20,9 @@ const Title = styled.h1`
   font-size: 4em;
   line-height: 100%;
   color: #288002;
+  @media (max-width: 700px) {
+    font-size: 3em;
+  }
 `;
 const Text = styled.p`
   margin-top: 5%;
@@ -28,6 +34,9 @@ const Text = styled.p`
   height: 100%;
   width: 90%;
   color: black;
+  @media (max-width: 700px) {
+    font-size: 1.2em;
+  }
 `;
 function InfoView({ title, text }) {
   return (

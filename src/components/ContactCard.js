@@ -58,7 +58,11 @@ function ContactCard() {
     <Container>
       <Title>We look forward to hearing from you </Title>
       <BackgroundText>
-        <Img fluid={data.file.childImageSharp.fluid} alt="tag" />
+        <Img
+          fluid={data.file.childImageSharp.fluid}
+          alt="tag"
+          loading="eager"
+        />
         <Text>Contact Info</Text>
       </BackgroundText>
       <ContactIcon />

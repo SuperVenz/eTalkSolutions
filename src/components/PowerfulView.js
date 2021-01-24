@@ -69,7 +69,11 @@ function PowerfulView() {
       />
 
       <Clouds>
-        <Img fluid={data.file.childImageSharp.fluid} alt="clouds" />
+        <Img
+          fluid={data.file.childImageSharp.fluid}
+          alt="clouds"
+          loading="eager"
+        />
       </Clouds>
       <TextContainer>
         {data.allExtendTextJson.nodes.map((e, i) => {
