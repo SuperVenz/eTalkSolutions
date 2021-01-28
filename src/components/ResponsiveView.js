@@ -50,14 +50,14 @@ const Container = styled.div`
 `;
 const TextContainer = styled.div`
   width: 70%;
-  padding-bottom: 4%;
+  padding-bottom: 2%;
   display: flex;
   flex-flow: row nowrap;
   justify-content: space-between;
   @media (max-width: 1200px) {
     width: 80%;
   }
-  @media (max-width: 650px) {
+  @media (max-width: 800px) {
     display: none;
   }
   @media (max-height: 700px) {
@@ -100,7 +100,7 @@ function ResponsiveView() {
     }
   `);
   return (
-    <Container className="hidden md:block">
+    <Container>
       <InfoView
         title="Responsive web apps built to perform and inspire"
         text="Having a web presence in today’s digital landscape is a must. While we develop with performance in mind, we have dedicated Ui designers ready to meet with you to ensure the look and feel of your website inspires your visitors and represents your brand."

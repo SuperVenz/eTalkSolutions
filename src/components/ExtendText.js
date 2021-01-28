@@ -10,8 +10,7 @@ height:100%;
 padding:2% 2%;
 border-radius: 25px;
 width:30%;
-  @media (max-width: 639px) {
-  
+  @media (max-width: 750px) {
   width:80%;
   margin-top:5%;
   }
