@@ -31,7 +31,7 @@ margin-bottom:1%;
 
 `;
 const TeamText = style.p`
-
+line-height:2em;
 margin-bottom:3%;`;
 const TeamView = () => {
   const data = useStaticQuery(graphql`
