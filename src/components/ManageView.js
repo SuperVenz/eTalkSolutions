@@ -26,9 +26,6 @@ const TextContainer = styled.div`
 `;
 const Pic = styled.div`
   z-index: -1;
-  display: hidden;
-  width: 30%;
-  top: 30%;
   right: 0%;
   position: absolute;
   @media (max-width: 900px) {
@@ -36,7 +33,7 @@ const Pic = styled.div`
   }
   @media (min-width: 1300px) {
     width: 25%;
-    right: 3%;
+    right: 0%;
     top: 15%;
   }
 `;
