@@ -1,6 +1,6 @@
 [
   {
-    "title": "We make modern websites",
+    "title": "Responsive web apps built to perform and inspire",
     "text": "Having a web presence in today’s digital landscape is a must. While we develop with performance in mind, we have dedicated Ui designers ready to meet with you to ensure the look and feel of your website inspires your visitors and represents your brand.",
     "bullet": [
       {
@@ -18,7 +18,7 @@
     ]
   },
   {
-    "title": "Safety",
+    "title": "Fundamentally safe and reliable",
     "text": "Malicious users on the web steal personal information, bring down sites, and exploit fundamental security flaws in web servers. We deliver your sites using serverless technology called a CDN. Sites like Facebook, Netflix, and Amazon use Content delivery networks over servers for their security, cost, and reliability",
     "bullet": [
       {

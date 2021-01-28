@@ -90,7 +90,7 @@ function SafeView() {
   return (
     <Wrapper>
       <InfoView
-        title="Safety and reliability comes default"
+        title="Fundamentally safe and reliable"
         text="Malicious users on the web steal personal information, bring down sites, and exploit fundamental security flaws in web servers. We deliver your sites using serverless technology called a CDN. Sites like Facebook, Netflix, and Amazon use Content delivery networks over servers for their security, cost, and reliability "
       />
       <TextContainer>
