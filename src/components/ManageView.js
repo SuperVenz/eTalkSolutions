@@ -16,7 +16,7 @@ const Wrapper = styled.div`
 `;
 const TextContainer = styled.div`
   width: 70%;
-  padding-bottom: 3%;
+  padding-bottom: 4%;
   display: flex;
   flex-flow: row nowrap;
   justify-content: space-between;
