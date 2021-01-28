@@ -11,8 +11,12 @@ const Wrapper = styled.div`
   justify-content: center;
   align-items: center;
   height: 100%;
-  @media (max-width: 900px) {
-    padding-bottom: 5%;
+  padding-bottom: 1%;
+  @media (max-height: 700px) {
+    padding-bottom: 4%;
+  }
+  @media (max-width: 1400px) {
+    padding-bottom: 4%;
   }
 `;
 const MedContainer = styled.div`

@@ -46,7 +46,13 @@ const Container = styled.div`
   justify-content: center;
   align-items: center;
   height: 100%;
-  padding-bottom: 2%;
+  padding-bottom: 3%;
+  @media (max-height: 700px) {
+    padding-bottom: 4%;
+  }
+  @media (max-width: 1400px) {
+    padding-bottom: 4%;
+  }
 `;
 const TextContainer = styled.div`
   width: 70%;
