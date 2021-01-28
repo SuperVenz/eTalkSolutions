@@ -13,7 +13,7 @@ function MobileView() {
       <MobileCard />
       <MobileContactBanner
         title="Demand More From Your Website"
-        text="Give us a call or send  a email!"
+        text="Give us a call or send an email!"
         button="Contact Us"
       />
     </MobileWrapper>
