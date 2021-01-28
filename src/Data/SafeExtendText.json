@@ -1,7 +1,7 @@
 [
   {
     "tag": "Cloud database",
-    "text": "Information is handled using microservice api’s to outsource data, analytics, user info into the cloud."
+    "text": "Information is handled using microservice API’s to outsource data, analytics, user info into the cloud."
   },
   {
     "tag": "Serverless",
@@ -9,6 +9,6 @@
   },
   {
     "tag": "Offline support",
-    "text": "Users can download sites anywhere from a phone,tablet,or desktop just like an app."
+    "text": "Users can download sites anywhere from a phone, tablet, or desktop just like an app."
   }
 ]

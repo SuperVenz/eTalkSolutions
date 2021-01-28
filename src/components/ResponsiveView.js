@@ -104,7 +104,7 @@ function ResponsiveView() {
   return (
     <Container className="hidden md:block">
       <InfoView
-        title="Responsive web apps built to perform and inspire. "
+        title="Responsive web apps built to perform and inspire"
         text="Having a web presence in today’s digital landscape is a must. While we develop with performance in mind, we have dedicated Ui designers ready to meet with you to ensure the look and feel of your website inspires your visitors and represents your brand."
       />
       <TextContainer>
