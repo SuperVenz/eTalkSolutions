@@ -17,12 +17,13 @@ const Title = styled.h1`
   font-family: Inter;
   font-style: normal;
   font-weight: 500;
-  font-size: 4em;
+  font-size: 3.5em;
   line-height: 100%;
   height: 30%;
   color: #288002;
 
-  @media (max-width: 1400px) {
+  @media (max-height: 800px) {
+    padding-top: 2%;
     font-size: 3em;
   }
 `;
@@ -37,6 +38,10 @@ const Text = styled.p`
   color: black;
   @media (max-width: 900px) {
     font-size: 1.2em;
+  }
+  @media (max-height: 800px) {
+    font-size: 1em;
+    padding-top: 7%;
   }
 `;
 function InfoView({ title, text }) {

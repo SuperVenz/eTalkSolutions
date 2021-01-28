@@ -21,7 +21,7 @@ function SvgLink({ children, text, to }) {
     <Container>
       <NavListLink
         to={to}
-        className="rounded-full h-16 w-16 flex items-center justify-center bg-gray-200"
+        className="rounded-full h-10 w-10 lg:h-16 lg:w-16 flex items-center justify-center bg-gray-200"
         activeClassName="active"
       >
         {children}

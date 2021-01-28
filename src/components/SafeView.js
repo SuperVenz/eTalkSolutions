@@ -6,6 +6,7 @@ import ExtendText from "./ExtendText";
 import { useStaticQuery, graphql } from "gatsby";
 const Wrapper = styled.div`
   display: flex;
+  overflow-y: hidden;
   flex-flow: column nowrap;
   justify-content: center;
   align-items: center;
@@ -24,6 +25,8 @@ const MedContainer = styled.div`
   @media (min-width: 1400px) {
     top: 8%;
   }
+  @media (max-width: 800px) {
+  }
 `;
 const TextContainer = styled.div`
   width: 70%;
@@ -33,6 +36,10 @@ const TextContainer = styled.div`
   justify-content: space-between;
   @media (max-width: 1200px) {
     width: 80%;
+  }
+  @media (max-height: 700px) {
+    padding-bottom: 6%;
+    width: 100%;
   }
 `;
 

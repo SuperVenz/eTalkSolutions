@@ -62,6 +62,10 @@ const TextContainer = styled.div`
   @media (max-width: 600px) {
     display: none;
   }
+  @media (max-height: 700px) {
+    padding-bottom: 6%;
+    width: 100%;
+  }
 `;
 
 function ResponsiveView() {

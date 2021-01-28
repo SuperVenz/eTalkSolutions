@@ -24,6 +24,10 @@ line-height:20px;
   @media (max-width: 639px) {
   line-height:30px;
   }
+     @media (max-height: 700px) {
+     font-size:.70em;
+       line-height:20px;
+  }
 
 `;
 const Row = style.div` 
@@ -40,9 +44,10 @@ const Tag = style.h1`
   @media (max-width: 639px) {
     font-size:1.3em;
   }
-   @media (max-width: 900px) {
-    font-size:1.2em;
+   @media (max-height: 700px) {
+     font-size:1em;
   }
+  
  
 `;
 const Icon = style.div`
@@ -53,7 +58,9 @@ padding-top:2%;
     @media (max-width: 900px) {
       padding-right:5%;
     }
-  
+   @media (max-height: 700px) {
+     width:2em;
+  }
 width:3em;`;
 
 const ExtendText = ({ tag, text, icon }) => {

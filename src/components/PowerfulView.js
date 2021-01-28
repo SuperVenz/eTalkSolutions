@@ -23,6 +23,9 @@ const TextContainer = styled.div`
   @media (max-width: 1200px) {
     width: 80%;
   }
+  @media (max-height: 600px) {
+    padding-bottom: 6%;
+  }
 `;
 const Clouds = styled.div`
   z-index: -1;

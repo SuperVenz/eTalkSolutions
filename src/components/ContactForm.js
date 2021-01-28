@@ -205,7 +205,7 @@ function ContactForm() {
               <Text>Company Name</Text>
               <Input
                 name="Company"
-                placeholder="E-Talk Solutions"
+                placeholder="eTalk Solutions"
                 required
                 value={company}
                 onChange={(e) => setCompany(e.target.value)}
