@@ -2,7 +2,10 @@ import React from "react";
 import Layout from "../components/Layout";
 import NavSlide from "../components/NavSlide";
 import ResponsiveView from "../components/ResponsiveView";
+import style from "styled-components";
 // markup
+const Main = style.main`
+height:100%;`;
 const IndexPage = () => {
   return (
     <Layout
@@ -20,11 +23,11 @@ const IndexPage = () => {
           "San Diego Web Development Company specializing in progessive web apps for small business ",
       }}
     >
-      <main>
+      <Main>
         <ResponsiveView />
 
         <NavSlide />
-      </main>
+      </Main>
     </Layout>
   );
 };

@@ -4,7 +4,7 @@ import ContactCard from "../components/ContactCard";
 import ContactForm from "../components/ContactForm";
 import style from "styled-components";
 
-const Container = style.div`
+const Container = style.main`
 margin-top:2%;
 display:flex;
 justify-content:space-evenly;

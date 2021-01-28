@@ -2,7 +2,11 @@ import React from "react";
 import styled from "styled-components";
 import MobileCard from "./MobileCard";
 import MobileContactBanner from "./MobileContactBanner";
-const MobileWrapper = styled.div``;
+const MobileWrapper = styled.div`
+  @media only screen and (min-width: 600px) {
+    dispaly: none;
+  }
+`;
 function MobileView() {
   return (
     <MobileWrapper>

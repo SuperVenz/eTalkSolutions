@@ -2,6 +2,10 @@ import React from "react";
 import NavSlide from "../components/NavSlide";
 import Layout from "../components/Layout";
 import SafeView from "../components/SafeView";
+import style from "styled-components";
+// markup
+const Main = style.main`
+height:100%;`;
 const safe = () => {
   return (
     <Layout
@@ -12,8 +16,10 @@ const safe = () => {
           "Increase your security agaisnt Ddos and hackers by employing new serverless technology",
       }}
     >
-      <SafeView />
-      <NavSlide />
+      <Main>
+        <SafeView />
+        <NavSlide />
+      </Main>
     </Layout>
   );
 };

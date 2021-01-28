@@ -1,0 +1,14 @@
+[
+  {
+    "tag": "Cloud database",
+    "text": "Information is handled using microservice api’s to outsource data, analytics, user info into the cloud"
+  },
+  {
+    "tag": "Serverless",
+    "text": "No server means no malicious requests, DDOS attacks, or personal data leakage."
+  },
+  {
+    "tag": "Offline support",
+    "text": "Users can download sites anywhere from a phone,tablet,or desktop just like an app."
+  }
+]

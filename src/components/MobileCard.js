@@ -1,6 +1,7 @@
 import React from "react";
 import styled from "styled-components";
 import Img from "gatsby-image";
+import ExtendText from "./ExtendText";
 import { useStaticQuery, graphql } from "gatsby";
 const Div = styled.div`
   display: flex;
@@ -27,6 +28,17 @@ const Info = styled.p`
 function MobileCard() {
   const data = useStaticQuery(graphql`
     {
+      file(relativePath: { eq: "Stary.png" }) {
+        childImageSharp {
+          fluid {
+            aspectRatio
+            base64
+            sizes
+            srcSet
+            src
+          }
+        }
+      }
       allFile(
         filter: {
           extension: { regex: "/(png)/" }
@@ -54,6 +66,10 @@ function MobileCard() {
           node {
             text
             title
+            bullet {
+              tag
+              text
+            }
           }
         }
       }
@@ -74,6 +90,16 @@ function MobileCard() {
             <Info className="mt-5 mb-3 w-1/2 w-4/5">
               {data.allMobileViewJson.edges[i].node.text}
             </Info>
+            {data.allMobileViewJson.edges[i].node.bullet.map((e) => {
+              return (
+                <ExtendText
+                  tag={e.tag}
+                  text={e.text}
+                  key={e.tag}
+                  icon={data.file.childImageSharp.fluid}
+                />
+              );
+            })}
           </Div>
         );
       })}

@@ -2,19 +2,49 @@ import React from "react";
 import InfoView from "./InfoView";
 import styled from "styled-components";
 import Img from "gatsby-image";
+import ExtendText from "./ExtendText";
 import { useStaticQuery, graphql } from "gatsby";
-const Wrapper = styled.div``;
+const Wrapper = styled.div`
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  @media (max-width: 900px) {
+    padding-bottom: 5%;
+  }
+`;
 const MedContainer = styled.div`
-  position: fixed;
+  position: absolute;
+  z-index: -1;
   right: 0;
   top: 20%;
   height: 0%;
   width: 40%;
+  @media (min-width: 1400px) {
+    top: 8%;
+  }
+`;
+const TextContainer = styled.div`
+  width: 70%;
+  padding-bottom: 3%;
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-between;
+  @media (max-width: 1200px) {
+    width: 80%;
+  }
 `;
 
 function SafeView() {
   const data = useStaticQuery(graphql`
     {
+      allSafeExtendTextJson {
+        nodes {
+          tag
+          text
+        }
+      }
       file(relativePath: { eq: "Safe.png" }) {
         childImageSharp {
           fluid {
@@ -26,14 +56,45 @@ function SafeView() {
           }
         }
       }
+      allFile(
+        filter: { relativeDirectory: { eq: "SafeBullets" } }
+        sort: { order: ASC, fields: base }
+      ) {
+        edges {
+          node {
+            childImageSharp {
+              fluid {
+                aspectRatio
+                base64
+                sizes
+                src
+                srcSet
+              }
+            }
+          }
+        }
+      }
     }
   `);
   return (
     <Wrapper>
       <InfoView
-        title="Safe and Secure for your users. Peace of mind for you."
-        text="Speed, performance, and design are what we all like to think about when it comes to building the best sites on the internet, security is most often overlooked. Malicious users on the web steal personal information, bring down sites, and exploit fundamental security flaws in web servers. all Solution tackles this problem by using new serverless technology to deliver your websites. No server means no reachable database for malicious requests, DDOS attacks, or accidental exposure.  The security of your digital footprint is something we don’t take for granted."
+        title="Safety and reliability comes default"
+        text="Malicious users on the web steal personal information, bring down sites, and exploit fundamental security flaws in web servers. We deliver your sites using serverless technology called a CDN. Sites like Facebook, Netflix, and Amazon use Content delivery networks over servers for their security, cost, and reliability "
       />
+      <TextContainer>
+        {data.allSafeExtendTextJson.nodes.map((e, i) => {
+          let r = `${i}r`;
+          return (
+            <ExtendText
+              key={r}
+              tag={e.tag}
+              icon={data.allFile.edges[i].node.childImageSharp.fluid}
+              text={e.text}
+            />
+          );
+        })}
+      </TextContainer>
       <MedContainer>
         <Img fluid={data.file.childImageSharp.fluid} alt="tag" />
       </MedContainer>

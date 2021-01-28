@@ -5,32 +5,44 @@ import styled from "styled-components";
 import ExtendText from "./ExtendText";
 import Img from "gatsby-image";
 const Wrapper = styled.div`
-  position: relative;
   display: flex;
   flex-flow: column nowrap;
-  padding-bottom: 5%;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  @media (max-width: 900px) {
+    padding-bottom: 5%;
+  }
 `;
 const TextContainer = styled.div`
-  margin-top: 5%;
+  width: 70%;
+  padding-bottom: 3%;
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-between;
+  @media (max-width: 1200px) {
+    width: 80%;
+  }
 `;
 const Clouds = styled.div`
-  width: 200px;
-  height: 200px;
+  z-index: -1;
+  width: 300px;
+  height: 300px;
   position: absolute;
-  right: 25%;
-  top: 5%;
+  right: 22%;
+  top: 3%;
 `;
 function PowerfulView() {
   const data = useStaticQuery(graphql`
     {
-      allExtendTextJson {
+      allPowerfulExtendTextJson {
         nodes {
           tag
           text
         }
       }
       allFile(
-        filter: { relativeDirectory: { eq: "Serverless" } }
+        filter: { relativeDirectory: { eq: "PowerfulBullets" } }
         sort: { fields: base, order: ASC }
       ) {
         edges {
@@ -64,8 +76,8 @@ function PowerfulView() {
   return (
     <Wrapper>
       <InfoView
-        title="Discover the power of serverless computing."
-        text="Serverless computing enables developers to build and deploy applications faster because the need to manage infrastructure like servers and databases is eliminated. The two biggest benefits of serverless computing is allowing developers to focus on the business goals of the code they write and organizations only pay for the computing resources that they use. "
+        title="Discover the power of progressive web apps"
+        text="Gatsby sites are fundamentally different from today's sites. All gatsby sites are progressive web apps that are inherently faster, more secure, and recognized as the most accessible web framework for impaired users by WebAIM."
       />
 
       <Clouds>
@@ -76,7 +88,7 @@ function PowerfulView() {
         />
       </Clouds>
       <TextContainer>
-        {data.allExtendTextJson.nodes.map((e, i) => {
+        {data.allPowerfulExtendTextJson.nodes.map((e, i) => {
           let r = `${i}r`;
           return (
             <ExtendText

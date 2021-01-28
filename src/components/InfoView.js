@@ -2,15 +2,15 @@ import React from "react";
 import styled from "styled-components";
 
 const Container = styled.div`
-  margin-left: 20%;
   width: 50%;
-  margin-top: 6%;
-  height: 100%;
-  @media (max-width: 700px) {
+  height: 70%;
+  padding-top: 2%;
+  @media (max-width: 600px) {
     display: none;
   }
-  @media (max-width: 1450px) {
-    padding-bottom: 10%;
+  @media (max-width: 1300px) {
+    padding-bottom: 3%;
+    width: 80%;
   }
 `;
 const Title = styled.h1`
@@ -19,22 +19,23 @@ const Title = styled.h1`
   font-weight: 500;
   font-size: 4em;
   line-height: 100%;
+  height: 30%;
   color: #288002;
-  @media (max-width: 700px) {
+
+  @media (max-width: 1300px) {
     font-size: 3em;
   }
 `;
 const Text = styled.p`
-  margin-top: 5%;
+  padding-top: 3%;
   font-family: Inter;
   font-style: normal;
   font-weight: normal;
   font-size: 1.5em;
   line-height: 200%;
-  height: 100%;
   width: 90%;
   color: black;
-  @media (max-width: 700px) {
+  @media (max-width: 900px) {
     font-size: 1.2em;
   }
 `;

@@ -1,0 +1,14 @@
+[
+  {
+    "tag": "Admin Dashboard",
+    "text": "Use tools you are familiar with like wordpress to edit your apps content on the fly."
+  },
+  {
+    "tag": "Write article/blog",
+    "text": "Be able to regularly post blogs and articles to interact with your sites visitors and drive user engagement."
+  },
+  {
+    "tag": "Continuous intergration",
+    "text": "Update your site anytime with out it going down. All updates automatically merge into existing builds"
+  }
+]

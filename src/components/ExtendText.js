@@ -1,54 +1,71 @@
-import React, { useState } from "react";
+import React from "react";
 import style from "styled-components";
 import Img from "gatsby-image";
 const Wrapper = style.div`
-display:inline-block;
 position: relative;
-margin-left:20%;
-margin-top:1%;
-margin-bottom:5%;
-  @media (max-width: 900px) {
-margin-left:0%;
-  };
+display:flex;
+flex-flow: column nowrap;
+background: #F5F5F7;
+height:100%;
+padding:2% 2%;
+border-radius: 25px;
+width:30%;
+  @media (max-width: 639px) {
+  
+  width:80%;
+  margin-top:5%;
+  }
 
 
 `;
 const Text = style.p` 
-height:3em;
-width:40em;
-margin-left:3%;
+padding-top:5%;
+line-height:20px;
+  @media (max-width: 639px) {
+  line-height:30px;
+  }
+
 `;
-const Span = style.span`
-margin-right:1%;
-`;
-const Click = style.div` 
+const Row = style.div` 
 display:flex;
+flex-flow: row nowrap;
+width:100%;
+height:40%;
+
 `;
 const Tag = style.h1`
-outline:none;
-font-size:1.5em;
-
+  padding-left:5%;
+    align-self: center;
+    font-size:1.5em;
+  @media (max-width: 639px) {
+    font-size:1.3em;
+  }
+   @media (max-width: 900px) {
+    font-size:1.2em;
+  }
+ 
 `;
 const Icon = style.div`
-margin-right:1%;
-width:1.5em;
-height:1.5em;`;
+  @media (max-width: 639px) {
+  padding-right:2%;
+padding-top:2%;
+  }
+    @media (max-width: 900px) {
+      padding-right:5%;
+    }
+  
+width:3em;`;
 
 const ExtendText = ({ tag, text, icon }) => {
-  const [open, setOpen] = useState(false);
-
   return (
     <Wrapper>
-      <Click onClick={() => setOpen(!open)} onKeyDown={() => setOpen(!open)}>
+      <Row>
         <Icon>
           <Img fluid={icon} />
         </Icon>
-        <Tag open={open}>{tag}</Tag>
-        <Text open={open}>
-          <Span>&#x0226B;</Span>
-          {text}
-        </Text>
-      </Click>
+        <Tag>{tag}</Tag>
+      </Row>
+      <Text>{text}</Text>
     </Wrapper>
   );
 };

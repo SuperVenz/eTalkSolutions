@@ -7,14 +7,17 @@ import { useStaticQuery, graphql } from "gatsby";
 const Top = styled.div`
   z-index: 30;
   position: ${(props) => (props.open ? "fixed" : "static")};
-  right: 0;
-  top: 7%;
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  right: 9%;
+  height: 25px;
+  top: 5%;
   cursor: "pointer";
 `;
 const Menue = styled.div`
-  margin-top: ${(props) => (props.open ? "px" : "")};
-  margin-top: 5%;
   height: 30%;
+  margin-right: 10%;
 `;
 const Nav = styled.nav`
   display: ${(props) => (props.open ? "flex" : "none")};
@@ -52,11 +55,11 @@ const MobileDrop = () => {
     <Menue open={open} className="md:hidden">
       <Top
         open={open}
+        className=""
         onClick={() => setOpen(!open)}
         onKeyDown={() => setOpen(!open)}
-        className=""
       >
-        <DropMenu aria-hidden="true" focusable="false" className="mr-5 " />
+        <DropMenu aria-hidden="true" focusable="false" className="h-full" />
       </Top>
       <Nav open={open}>
         {data.allNavJson.nodes.map((nav) => (

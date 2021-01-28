@@ -1,18 +1,54 @@
 import React from "react";
 import InfoView from "../components/InfoView";
 import { useStaticQuery, graphql } from "gatsby";
-import style from "styled-components";
+import styled from "styled-components";
 import Img from "gatsby-image";
-
-const Pic = style.div`
-width:30%;
+import ExtendText from "./ExtendText";
+const Wrapper = styled.div`
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  @media (max-width: 900px) {
+    padding-bottom: 5%;
+  }
+`;
+const TextContainer = styled.div`
+  width: 70%;
+  padding-bottom: 3%;
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-between;
+  @media (max-width: 1200px) {
+    width: 80%;
+  }
+`;
+const Pic = styled.div`
+  z-index: -1;
+  display: hidden;
+  width: 30%;
+  top: 30%;
+  right: 0%;
   position: absolute;
-  right:0;
-  top:20%;
+  @media (max-width: 900px) {
+    display: none;
+  }
+  @media (min-width: 1300px) {
+    width: 25%;
+    right: 3%;
+    top: 15%;
+  }
 `;
 function ManageView() {
   const data = useStaticQuery(graphql`
     {
+      allManageExtendTextJson {
+        nodes {
+          tag
+          text
+        }
+      }
       file(relativePath: { eq: "Manage.png" }) {
         childImageSharp {
           fluid {
@@ -24,21 +60,52 @@ function ManageView() {
           }
         }
       }
+      allFile(
+        filter: { relativeDirectory: { eq: "ManageBullets" } }
+        sort: { order: ASC, fields: base }
+      ) {
+        edges {
+          node {
+            childImageSharp {
+              fluid {
+                aspectRatio
+                base64
+                sizes
+                src
+                srcSet
+              }
+            }
+          }
+        }
+      }
     }
   `);
   return (
-    <div>
+    <Wrapper>
       <InfoView
-        title="Be in control of your own site"
-        text="World-Class technology should work seamlessly with the tools you are already familiar with. Sites built on the Gatsby cloud integrate with CMS platforms like WordPress or Contentful. You can stay in control of your site’s content without having to learn a new interface. Whether you need us to manage your site or you prefer to do it yourself, we’ve got you covered."
+        title="Manage and control your site after development"
+        text="You can stay in control of your site’s content and make changes without spending a dime on revisions. Sites built on the Gatsby cloud integrate with CMS platforms like WordPress or Contentful to pull content.  Thanks to continuous integration your site will update with no downtime."
       />
+      <TextContainer>
+        {data.allManageExtendTextJson.nodes.map((e, i) => {
+          let r = `${i}r`;
+          return (
+            <ExtendText
+              key={r}
+              tag={e.tag}
+              text={e.text}
+              icon={data.allFile.edges[i].node.childImageSharp.fluid}
+            />
+          );
+        })}
+      </TextContainer>
       <Pic>
         <Img
           fluid={data.file.childImageSharp.fluid}
           alt="Picture of a Document"
         />
       </Pic>
-    </div>
+    </Wrapper>
   );
 }
 

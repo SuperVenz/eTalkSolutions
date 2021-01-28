@@ -9,12 +9,15 @@ import styled from "styled-components";
 const Container = styled.div`
   position: fixed;
   bottom: 0;
+  border-color: #f5f5f7;
+  border-style: solid;
   border-top-width: 2px;
-  margin-top: 0%;
+  margin-top: 1%;
   background: white;
   display: flex;
   flex-flow: row nowrap;
   padding-top: 1%;
+  padding-bottom: 4px;
   align-items: center;
   width: 100%;
   justify-content: space-evenly;
