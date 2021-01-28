@@ -9,7 +9,6 @@ const Container = styled.div`
     display: none;
   }
   @media (max-width: 1300px) {
-    padding-bottom: 3%;
     width: 80%;
   }
 `;

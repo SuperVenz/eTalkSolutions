@@ -5,10 +5,8 @@ import ExtendText from "./ExtendText";
 import { useStaticQuery, graphql } from "gatsby";
 const Div = styled.div`
   display: flex;
-  @media (max-width: 639px) {
-    flex-flow: column nowrap;
-    align-items: center;
-  }
+  flex-flow: column nowrap;
+  align-items: center;
 `;
 const PicContain = styled.div`
   margin-top: 20%;

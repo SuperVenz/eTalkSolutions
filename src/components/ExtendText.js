@@ -51,13 +51,7 @@ const Tag = style.h1`
  
 `;
 const Icon = style.div`
-  @media (max-width: 639px) {
-  padding-right:2%;
-padding-top:2%;
-  }
-    @media (max-width: 900px) {
-      padding-right:5%;
-    }
+
    @media (max-height: 700px) {
      width:2em;
   }

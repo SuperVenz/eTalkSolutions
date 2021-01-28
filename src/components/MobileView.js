@@ -3,7 +3,7 @@ import styled from "styled-components";
 import MobileCard from "./MobileCard";
 import MobileContactBanner from "./MobileContactBanner";
 const MobileWrapper = styled.div`
-  @media only screen and (min-width: 600px) {
+  @media (min-width: 600px) {
     dispaly: none;
   }
 `;
