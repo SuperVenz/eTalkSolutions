@@ -22,7 +22,7 @@ const Title = styled.h1`
   height: 30%;
   color: #288002;
 
-  @media (max-width: 1300px) {
+  @media (max-width: 1400px) {
     font-size: 3em;
   }
 `;
