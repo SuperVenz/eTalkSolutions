@@ -59,7 +59,7 @@ const TextContainer = styled.div`
   @media (max-width: 1200px) {
     width: 80%;
   }
-  @media (max-width: 600px) {
+  @media (max-width: 650px) {
     display: none;
   }
   @media (max-height: 700px) {

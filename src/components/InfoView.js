@@ -5,7 +5,7 @@ const Container = styled.div`
   width: 50%;
   height: 70%;
   padding-top: 2%;
-  @media (max-width: 600px) {
+  @media (max-width: 650px) {
     display: none;
   }
   @media (max-width: 1300px) {
@@ -22,9 +22,10 @@ const Title = styled.h1`
   height: 30%;
   color: #288002;
 
-  @media (max-height: 800px) {
+  @media (max-height: 800px), (max-width: 900px) {
     padding-top: 2%;
     font-size: 3em;
+    padding-bottom: 10%;
   }
 `;
 const Text = styled.p`
