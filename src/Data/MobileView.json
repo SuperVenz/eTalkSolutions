@@ -41,7 +41,7 @@
     "bullet": [
       {
         "tag": "Performance",
-        "text": "Consistently  scores 98-100  on SEO, performance, and accessibility on google benchmark tests"
+        "text": "Consistently  scores 98-100  on SEO, performance, and accessibility on google benchmark tests."
       },
       {
         "tag": "Scalability",
@@ -67,7 +67,7 @@
       },
       {
         "tag": "Continuous intergration",
-        "text": "Update your site anytime with out it going down. All updates automatically merge into existing builds"
+        "text": "Update your site anytime with out it going down. All updates automatically merge into existing builds."
       }
     ]
   }

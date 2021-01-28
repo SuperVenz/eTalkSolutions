@@ -1,7 +1,7 @@
 [
   {
     "tag": "Cloud database",
-    "text": "Information is handled using microservice api’s to outsource data, analytics, user info into the cloud"
+    "text": "Information is handled using microservice api’s to outsource data, analytics, user info into the cloud."
   },
   {
     "tag": "Serverless",
