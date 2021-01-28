@@ -25,9 +25,13 @@ justify-content: space-between;
   }
 `;
 const Label = style.label`
+  border-color: gray;
+  border-style: solid;
+  border-width: 1px;
   margin-bottom:10%;
   padding-left:3%;
   padding-top:1%;
+  padding-bottom:1%;
   border: 1% solid #A9A8A8;
   border-radius: 10px;
   border-width: 3px;
@@ -38,6 +42,10 @@ const Label = style.label`
   `;
 const LabelCol = style.label`
   margin-bottom:10%;
+   border-color: gray;
+  border-style: solid;
+  border-width: 1px;
+    padding-bottom:1%;
     padding-top:1%;
     padding-left:3%;
    border: 1% solid #A9A8A8;
