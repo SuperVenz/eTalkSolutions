@@ -14,7 +14,6 @@ background:#E3E3E3;
 width:100vw;
 padding:5%;
 display:flex;
-color:#666666;
 justify-content:center;
 }
 `;

@@ -25,13 +25,13 @@ margin-left:5%;
 const Text = style.p`
 font-size:1.50em;
 margin-left:5%;
-color:#89B973
+color: #288002;
 `;
 const Button = style(Link)`
 align-self: end;
 background: #288002;
 border-radius: 10px;
-font-color:#BFD9B3;
+font-color:#F5F5F7;
 padding:.70em;
 height:30%;
 display:flex;
@@ -41,7 +41,7 @@ margin-left:5%;
 margin-top:10%;
 margin-bottom:10%;
 width:50%;
-color:#89B973
+color:#F5F5F7;
 
 `;
 function MobileContactBanner({ title, text, button }) {
