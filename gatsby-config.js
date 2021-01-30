@@ -13,7 +13,7 @@ module.exports = {
     "gatsby-plugin-react-helmet",
     "gatsby-plugin-next-seo",
     "gatsby-plugin-sitemap",
-    "gatsby-plugin-remove-serviceworker",
+    "gatsby-plugin-offline",
     {
       resolve: `gatsby-plugin-google-gtag`,
       options: {
@@ -49,6 +49,12 @@ module.exports = {
         icon: "src/images/icon.png",
         cache_busting_mode: "none",
         crossOrigin: `use-credentials`, // `use-credentials` or `anonymous`
+      },
+    },
+    {
+      resolve: `gatsby-plugin-offline`,
+      options: {
+        precachePages: [`/*`],
       },
     },
     `gatsby-transformer-json`,
