@@ -25,7 +25,6 @@ const IndexPage = () => {
     >
       <Main>
         <ResponsiveView />
-
         <NavSlide />
       </Main>
     </Layout>
