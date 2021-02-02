@@ -1,6 +1,8 @@
 import React from "react";
 import { Link } from "gatsby";
 import { useStaticQuery, graphql } from "gatsby";
+import AniLink from "gatsby-plugin-transition-link/AniLink";
+
 function NavTop() {
   const data = useStaticQuery(graphql`
     {
@@ -19,9 +21,16 @@ function NavTop() {
   md:justify-around sticky md:items-center md:h-full md:w-full"
       >
         {data.allNavJson.nodes.map((nav) => (
-          <Link to={nav.link} activeClassName="underline" key={nav.link}>
+          <AniLink
+            hex="#7BB064"
+            duration={0.5}
+            paintDrip
+            to={nav.link}
+            activeClassName="underline"
+            key={nav.link}
+          >
             {nav.tag}
-          </Link>
+          </AniLink>
         ))}
       </nav>
       <nav className="md:hidden"></nav>

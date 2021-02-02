@@ -14,6 +14,7 @@ module.exports = {
     "gatsby-plugin-next-seo",
     "gatsby-plugin-sitemap",
     "gatsby-plugin-offline",
+    `gatsby-plugin-transition-link`,
     {
       resolve: `gatsby-plugin-google-gtag`,
       options: {
