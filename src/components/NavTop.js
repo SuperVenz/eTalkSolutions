@@ -1,5 +1,4 @@
 import React from "react";
-import { Link } from "gatsby";
 import { useStaticQuery, graphql } from "gatsby";
 import AniLink from "gatsby-plugin-transition-link/AniLink";
 
@@ -33,7 +32,6 @@ function NavTop() {
           </AniLink>
         ))}
       </nav>
-      <nav className="md:hidden"></nav>
     </header>
   );
 }

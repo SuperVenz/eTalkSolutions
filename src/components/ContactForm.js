@@ -6,6 +6,7 @@ const Wrapper = style.div`
 width:40%;
   @media (max-width: 768px) {
       width:90%;
+      padding-left:5%;
     }
 `;
 const Title = style.h3`

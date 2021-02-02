@@ -13,7 +13,6 @@ const Top = styled.div`
   align-content: center;
   right: 9%;
   height: 25px;
-  top: 5%;
   cursor: "pointer";
 `;
 const Menue = styled.div`
