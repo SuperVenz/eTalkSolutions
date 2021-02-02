@@ -3,6 +3,7 @@ import { Link } from "gatsby";
 import DropMenu from "../images/svg/DropMenu.svg";
 import styled from "styled-components";
 import { useStaticQuery, graphql } from "gatsby";
+import AniLink from "gatsby-plugin-transition-link/AniLink";
 
 const Top = styled.div`
   z-index: 30;
@@ -63,14 +64,24 @@ const MobileDrop = () => {
       </Top>
       <Nav open={open}>
         {data.allNavJson.nodes.map((nav) => (
-          <Link
+          <AniLink
+            cover
+            bg="
+    url(https://images.unsplash.com/photo-1612153018787-4899c6e056d7?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=675&q=80)
+    center / cover   /* position / size */
+    no-repeat        /* repeat */
+    fixed            /* attachment */
+    padding-box      /* origin */
+    content-box      /* clip */
+    white            /* color */
+  "
             to={nav.link}
             className="mb-14 ml-5 w-1/6"
             activeClassName="underline"
             key={nav.tag}
           >
             {nav.tag}
-          </Link>
+          </AniLink>
         ))}
       </Nav>
     </Menue>
