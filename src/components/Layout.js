@@ -6,17 +6,6 @@ import style from "styled-components";
 import Helmet from "react-helmet";
 import { GatsbySeo } from "gatsby-plugin-next-seo";
 import { Link } from "gatsby";
-const Tag = style.footer`
-display:none;
- @media (max-width: 768px) {
-display:block;
-background:#E3E3E3;
-width:100vw;
-padding:5%;
-display:flex;
-justify-content:center;
-}
-`;
 const Logo = style.span`
 color:#288002;`;
 export default function Layout({ pageMeta, children }) {
@@ -89,10 +78,7 @@ export default function Layout({ pageMeta, children }) {
         <MobileDrop />
       </div>
       <NavTop />
-      <div className="child  ">{children}</div>
-      <Tag className="tag">
-        <p>Designed with love, developed with care. </p>
-      </Tag>
+      <div className="child ">{children}</div>
     </div>
   );
 }

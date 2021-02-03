@@ -1,5 +1,4 @@
 import React, { useState } from "react";
-import { Link } from "gatsby";
 import DropMenu from "../images/svg/DropMenu.svg";
 import styled from "styled-components";
 import { useStaticQuery, graphql } from "gatsby";

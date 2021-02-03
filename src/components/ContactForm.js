@@ -15,8 +15,7 @@ font-size:1.5em;
 
 `;
 const FormBox = style.form`
-width:80%;
-height:100%;`;
+width:80%;`;
 const Fieldset = style.fieldset`
 display:flex;
 flex-flow: row wrap;

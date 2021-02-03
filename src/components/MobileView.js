@@ -7,6 +7,17 @@ const MobileWrapper = styled.div`
     dispaly: none;
   }
 `;
+const Tag = styled.footer`
+  display: none;
+  @media (max-width: 768px) {
+    display: block;
+    background: #e3e3e3;
+    width: 100vw;
+    padding: 5%;
+    display: flex;
+    justify-content: center;
+  }
+`;
 function MobileView() {
   return (
     <MobileWrapper>
@@ -16,6 +27,9 @@ function MobileView() {
         text="Give us a call or send an email!"
         button="Contact Us"
       />
+      <Tag className="tag md:hidden">
+        <p>Designed with love, developed with care. </p>
+      </Tag>
     </MobileWrapper>
   );
 }

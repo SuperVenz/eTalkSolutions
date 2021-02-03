@@ -10,12 +10,12 @@ const Wrapper = styled.div`
   justify-content: center;
   align-items: center;
   height: 100%;
-  padding-bottom: 1%;
+  padding-bottom: 3%;
   @media (max-height: 700px) {
-    padding-bottom: 4%;
+    padding-bottom: 7%;
   }
   @media (max-width: 1400px) {
-    padding-bottom: 4%;
+    padding-bottom: 7%;
   }
 `;
 const TextContainer = styled.div`

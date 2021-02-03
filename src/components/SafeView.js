@@ -11,12 +11,12 @@ const Wrapper = styled.div`
   justify-content: center;
   align-items: center;
   height: 100%;
-  padding-bottom: 1%;
+  padding-bottom: 3%;
   @media (max-height: 700px) {
-    padding-bottom: 4%;
+    padding-bottom: 10%;
   }
   @media (max-width: 1400px) {
-    padding-bottom: 4%;
+    padding-bottom: 10%;
   }
 `;
 const MedContainer = styled.div`
@@ -91,7 +91,7 @@ function SafeView() {
     <Wrapper>
       <InfoView
         title="Fundamentally safe and reliable"
-        text="Malicious users on the web steal personal information, bring down sites, and exploit fundamental security flaws in web servers. We deliver your sites using serverless technology called a CDN. Sites like Facebook, Netflix, and Amazon use Content delivery networks over servers for their security, cost, and reliability "
+        text="Malicious users on the web steal personal information, bring down sites, and exploit fundamental security flaws in web servers. We deliver your sites using serverless technology called a CDN. Sites like Nikes, Netflix, and Amazon use content delivery networks over servers for their security, cost, and reliability"
       />
       <TextContainer>
         {data.allSafeExtendTextJson.nodes.map((e, i) => {

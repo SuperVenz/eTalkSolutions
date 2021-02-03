@@ -46,12 +46,12 @@ const Container = styled.div`
   justify-content: center;
   align-items: center;
   height: 100%;
-  padding-bottom: 3%;
+  padding-bottom: 5%;
   @media (max-height: 700px) {
-    padding-bottom: 4%;
+    padding-bottom: 8%;
   }
   @media (max-width: 1400px) {
-    padding-bottom: 4%;
+    padding-bottom: 8%;
   }
 `;
 const TextContainer = styled.div`

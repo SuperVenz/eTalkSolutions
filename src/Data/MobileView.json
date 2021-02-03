@@ -5,39 +5,39 @@
     "bullet": [
       {
         "tag": "Custom Designs",
-        "text": "Say goodbye to templates! Stand out from your competitors and make your brand like no other."
+        "text": "Say goodbye to templates! A website is a empty canvas waiting to be painted. Stand out from competitors and create a site that truly represents your brand and message"
       },
       {
         "tag": "A/B Testing",
-        "text": "Split up web traffic between different designs and test out what works best"
+        "text": "Be able to split up web traffic between different designs to test out new features, monitor user experience, and receive real-time feedback through google analytics."
       },
       {
         "tag": "UX Focused",
-        "text": "Our Ui designers focus on positive user experiences when it comes to web design."
+        "text": "Our Design team specializes in user experience to ensure your customers have a pleasant experience browsing your app."
       }
     ]
   },
   {
     "title": "Fundamentally safe and reliable",
-    "text": "Malicious users on the web steal personal information, bring down sites, and exploit fundamental security flaws in web servers. We deliver your sites using serverless technology called a CDN. Sites like Facebook, Netflix, and Amazon use Content delivery networks over servers for their security, cost, and reliability",
+    "text": "Malicious users on the web steal personal information, bring down sites, and exploit fundamental security flaws in web servers. We deliver your sites using serverless technology called a CDN. Sites like Nikes, Netflix, and Amazon use content delivery networks over servers for their security, cost, and reliability",
     "bullet": [
       {
-        "tag": "Cloud database",
-        "text": "Information is handled using microservice api’s to outsource data, analytics, user info into the cloud"
+        "tag": "Cloud Database",
+        "text": "Information is handled using microservice api’s to outsource data, analytics, and orders into the cloud"
       },
       {
         "tag": "Serverless",
-        "text": "No server means no malicious requests, DDOS attacks, or personal data leakage."
+        "text": "No server means no attack point for malicious requests, DDOS attacks, or personal data leakage."
       },
       {
         "tag": "Offline support",
-        "text": "Users can download sites anywhere from a phone,tablet,or desktop just like an app."
+        "text": "Your app is saved automatically when someone visits the first time. Users with bad to no internet can still navigate your app with ease."
       }
     ]
   },
   {
     "title": "Discover the power of serverless technology",
-    "text": "Gatsby sites are fundamentally different from today's sites. All gatsby sites are progressive web apps that are inherently faster, more secure, and recognized as the most accessible web framework for impaired users by WebAIM.",
+    "text": "Gatsby apps are fundamentally different from today's sites. All gatsby apps are known as progressive web appplications that are inherently faster, more secure, and recognized as the most accessible web framework for impaired users by WebAIM.",
     "bullet": [
       {
         "tag": "Performance",
@@ -49,7 +49,7 @@
       },
       {
         "tag": "Downloadable",
-        "text": "Progressive web apps can be installed on your phone, desktop, and taskbar as a web app."
+        "text": "Progressive web apps can be installed anywhere. On your phone, desktop, or taskbar as a web app."
       }
     ]
   },
@@ -59,15 +59,15 @@
     "bullet": [
       {
         "tag": "Admin Dashboard",
-        "text": "Use tools you are familiar with like wordpress to edit your apps content on the fly."
+        "text": "Use tools you are familiar with like Wordpress or Shopify to edit your apps content on the fly."
       },
       {
         "tag": "Article & Blog Support",
-        "text": "Be able to regularly post blogs and articles to interact with your sites visitors and drive user engagement."
+        "text": "Be able to regularly post blogs and articles to interact with your apps visitors and drive user engagement."
       },
       {
         "tag": "Continuous Intergration",
-        "text": "Update your site anytime without it going down. All updates automatically merge into existing builds."
+        "text": "Update your app anytime without it going down. All updates automatically merge into existing builds."
       }
     ]
   }
