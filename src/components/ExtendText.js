@@ -39,7 +39,8 @@ const Tag = style.h1`
   }
 `;
 const Icon = style.div`
-
+  margin-top:2%;
+  margin-bottom:auto;
    @media (max-height: 700px) {
      width:2.5em;
   }
