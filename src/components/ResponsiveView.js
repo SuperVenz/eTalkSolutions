@@ -5,6 +5,7 @@ import Img from "gatsby-image";
 import { useStaticQuery, graphql } from "gatsby";
 import MobileView from "./MobileView";
 import ExtendText from "./ExtendText";
+import NavSlide from "../components/NavSlide";
 const Phon = styled.div`
   z-index: -1;
   position: fixed;
@@ -43,20 +44,11 @@ const Tab = styled.div`
 const Container = styled.div`
   display: flex;
   flex-flow: column nowrap;
-  justify-content: center;
   align-items: center;
   height: 100%;
-  padding-bottom: 5%;
-  @media (max-height: 700px) {
-    padding-bottom: 8%;
-  }
-  @media (max-width: 1400px) {
-    padding-bottom: 8%;
-  }
 `;
 const TextContainer = styled.div`
   width: 70%;
-  padding-bottom: 2%;
   display: flex;
   flex-flow: row nowrap;
   justify-content: space-between;
@@ -67,8 +59,8 @@ const TextContainer = styled.div`
     display: none;
   }
   @media (max-height: 700px) {
-    padding-bottom: 6%;
     width: 100%;
+    justify-content: space-around;
   }
 `;
 
@@ -142,6 +134,7 @@ function ResponsiveView() {
           alt="Tablet"
         />
       </Tab>
+      <NavSlide />
       <MobileView />
     </Container>
   );

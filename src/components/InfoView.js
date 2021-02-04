@@ -3,13 +3,15 @@ import styled from "styled-components";
 
 const Container = styled.div`
   width: 50%;
-  height: 70%;
-  padding-top: 2%;
+  padding-top: 3%;
+  margin-bottom: auto;
   @media (max-width: 650px) {
     display: none;
   }
   @media (max-width: 1300px) {
     width: 80%;
+  }
+  @media (max-height: 800px), (max-width: 900px) {
   }
 `;
 const Title = styled.h1`
@@ -17,14 +19,10 @@ const Title = styled.h1`
   font-style: normal;
   font-weight: 500;
   font-size: 3.5em;
-  line-height: 100%;
-  height: 30%;
   color: #288002;
 
   @media (max-height: 800px), (max-width: 900px) {
-    padding-top: 2%;
-    font-size: 3em;
-    padding-bottom: 10%;
+    font-size: 2.5em;
   }
 `;
 const Text = styled.p`
@@ -36,12 +34,8 @@ const Text = styled.p`
   line-height: 200%;
   width: 90%;
   color: black;
-  @media (max-width: 900px) {
-    font-size: 1.2em;
-  }
-  @media (max-height: 800px) {
-    font-size: 1em;
-    padding-top: 7%;
+  @media (max-height: 800px), (max-width: 900px) {
+  1.2em
   }
 `;
 function InfoView({ title, text }) {

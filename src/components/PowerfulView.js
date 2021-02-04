@@ -4,31 +4,27 @@ import { useStaticQuery, graphql } from "gatsby";
 import styled from "styled-components";
 import ExtendText from "./ExtendText";
 import Img from "gatsby-image";
+import NavSlide from "../components/NavSlide";
 const Wrapper = styled.div`
   display: flex;
   flex-flow: column nowrap;
-  justify-content: center;
   align-items: center;
   height: 100%;
-  padding-bottom: 3%;
-  @media (max-height: 700px) {
-    padding-bottom: 7%;
-  }
-  @media (max-width: 1400px) {
-    padding-bottom: 7%;
-  }
 `;
 const TextContainer = styled.div`
   width: 70%;
-  padding-bottom: 4%;
   display: flex;
   flex-flow: row nowrap;
   justify-content: space-between;
   @media (max-width: 1200px) {
     width: 80%;
   }
-  @media (max-height: 600px) {
-    padding-bottom: 6%;
+  @media (max-width: 800px) {
+    display: none;
+  }
+  @media (max-height: 700px) {
+    width: 100%;
+    justify-content: space-around;
   }
 `;
 const Clouds = styled.div`
@@ -107,6 +103,7 @@ function PowerfulView() {
           );
         })}
       </TextContainer>
+      <NavSlide />
     </Wrapper>
   );
 }

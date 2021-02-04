@@ -7,8 +7,6 @@ import Power from "../images/svg/powerfulicon.svg";
 import styled from "styled-components";
 
 const Container = styled.div`
-  position: fixed;
-  bottom: 0;
   border-color: #f5f5f7;
   border-style: solid;
   border-top-width: 2px;
@@ -16,8 +14,9 @@ const Container = styled.div`
   background: white;
   display: flex;
   flex-flow: row nowrap;
+  margin-top: 2%;
   padding-top: 1%;
-  padding-bottom: 5px;
+  padding-bottom: 10px;
   align-items: center;
   width: 100%;
   justify-content: space-evenly;

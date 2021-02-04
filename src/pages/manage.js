@@ -1,5 +1,4 @@
 import React from "react";
-import NavSlide from "../components/NavSlide";
 import ManageView from "../components/ManageView";
 import Layout from "../components/Layout";
 import style from "styled-components";
@@ -12,12 +11,12 @@ function manage() {
       pageMeta={{
         title: "Manage",
         keywords: ["CMS", "Content Manage System"],
-        description: "Be able to control your site with a cms like wordpress",
+        description:
+          "Be able to control your site with a CMS like wordpress,shopify,and contentful",
       }}
     >
       <Main>
         <ManageView />
-        <NavSlide />
       </Main>
     </Layout>
   );

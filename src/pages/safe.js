@@ -1,5 +1,4 @@
 import React from "react";
-import NavSlide from "../components/NavSlide";
 import Layout from "../components/Layout";
 import SafeView from "../components/SafeView";
 import style from "styled-components";
@@ -18,7 +17,6 @@ const safe = () => {
     >
       <Main>
         <SafeView />
-        <NavSlide />
       </Main>
     </Layout>
   );

@@ -1,11 +1,11 @@
 import React from "react";
 import Layout from "../components/Layout";
-import NavSlide from "../components/NavSlide";
 import ResponsiveView from "../components/ResponsiveView";
 import style from "styled-components";
 // markup
 const Main = style.main`
 height:100%;`;
+
 const IndexPage = () => {
   return (
     <Layout
@@ -25,7 +25,6 @@ const IndexPage = () => {
     >
       <Main>
         <ResponsiveView />
-        <NavSlide />
       </Main>
     </Layout>
   );

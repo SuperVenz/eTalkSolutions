@@ -4,19 +4,28 @@ import styled from "styled-components";
 import Img from "gatsby-image";
 import ExtendText from "./ExtendText";
 import { useStaticQuery, graphql } from "gatsby";
+import NavSlide from "../components/NavSlide";
+
 const Wrapper = styled.div`
   display: flex;
-  overflow-y: hidden;
   flex-flow: column nowrap;
-  justify-content: center;
   align-items: center;
   height: 100%;
-  padding-bottom: 3%;
-  @media (max-height: 700px) {
-    padding-bottom: 10%;
+`;
+const TextContainer = styled.div`
+  width: 70%;
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-between;
+  @media (max-width: 1200px) {
+    width: 80%;
   }
-  @media (max-width: 1400px) {
-    padding-bottom: 10%;
+  @media (max-width: 800px) {
+    display: none;
+  }
+  @media (max-height: 700px) {
+    width: 100%;
+    justify-content: space-around;
   }
 `;
 const MedContainer = styled.div`
@@ -30,20 +39,6 @@ const MedContainer = styled.div`
     top: 8%;
   }
   @media (max-width: 800px) {
-  }
-`;
-const TextContainer = styled.div`
-  width: 70%;
-  padding-bottom: 4%;
-  display: flex;
-  flex-flow: row nowrap;
-  justify-content: space-between;
-  @media (max-width: 1200px) {
-    width: 80%;
-  }
-  @media (max-height: 700px) {
-    padding-bottom: 6%;
-    width: 100%;
   }
 `;
 
@@ -109,6 +104,7 @@ function SafeView() {
       <MedContainer>
         <Img fluid={data.file.childImageSharp.fluid} alt="tag" />
       </MedContainer>
+      <NavSlide />
     </Wrapper>
   );
 }

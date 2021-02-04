@@ -1,5 +1,4 @@
 import React from "react";
-import NavSlide from "../components/NavSlide";
 import Layout from "../components/Layout";
 import PowerfulView from "../components/PowerfulView";
 import style from "styled-components";
@@ -17,7 +16,6 @@ function power() {
     >
       <Main>
         <PowerfulView />
-        <NavSlide />
       </Main>
     </Layout>
   );

@@ -32,8 +32,6 @@
   }
   .child {
     grid-area: Child;
-    overflow: auto;
-    padding: 15px 5px 10px 5px;
   }
   .NavSlide {
     grid-area: Slide;
