@@ -1,11 +1,11 @@
 [
   {
     "title": "Responsive web apps built to perform and inspire",
-    "text": "Having a web presence in today’s digital landscape is a must. While we develop with performance in mind, we have dedicated Ui designers ready to meet with you to ensure the look and feel of your website inspires your visitors and represents your brand.",
+    "text": " Online platforms are fundamental when it comes to projecting your brand and message to customers. We have dedicated Ui designers ready to meet with you and help create a website that truly inspires your visitors.",
     "bullet": [
       {
         "tag": "Custom Designs",
-        "text": "Say goodbye to templates! A website is a empty canvas waiting to be painted. Stand out from competitors and create a site that truly represents your brand and message"
+        "text": "Say goodbye to templates! A website is a empty canvas waiting to be painted. Stand out from competitors and create a site that truly represents your brand and message."
       },
       {
         "tag": "A/B Testing",
@@ -19,11 +19,11 @@
   },
   {
     "title": "Fundamentally safe and reliable",
-    "text": "Malicious users on the web steal personal information, bring down sites, and exploit fundamental security flaws in web servers. We deliver your sites using serverless technology called a CDN. Sites like Nikes, Netflix, and Amazon use content delivery networks over servers for their security, cost, and reliability",
+    "text": "Malicious users on the web steal personal information, bring down sites, and exploit fundamental security flaws in web servers. We deliver your sites using serverless technology called a Content Delivery Network. Sites like Nikes, Netflix, and Amazon  perfer using a CDN over servers for their security, cost, and reliability.",
     "bullet": [
       {
         "tag": "Cloud Database",
-        "text": "Information is handled using microservice api’s to outsource data, analytics, and orders into the cloud"
+        "text": "Information is handled using microservice api’s to outsource data, analytics, and orders into the cloud."
       },
       {
         "tag": "Serverless",

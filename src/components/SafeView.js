@@ -86,10 +86,11 @@ function SafeView() {
     <Wrapper>
       <InfoView
         title="Fundamentally safe and reliable"
-        text="Malicious users on the web steal personal information, bring down sites, and exploit fundamental security flaws in web servers. We deliver your sites using serverless technology called a CDN. Sites like Nikes, Netflix, and Amazon use content delivery networks over servers for their security, cost, and reliability"
+        text="Malicious users on the web steal personal information, bring down sites, and exploit fundamental security flaws in web servers. We deliver your sites using serverless technology called a Content Delivery Network. Sites like Nikes, Netflix, and Amazon  perfer using a CDN over servers for their security, cost, and reliability."
       />
       <TextContainer>
         {data.allSafeExtendTextJson.nodes.map((e, i) => {
+          // key for array
           let r = `${i}r`;
           return (
             <ExtendText
