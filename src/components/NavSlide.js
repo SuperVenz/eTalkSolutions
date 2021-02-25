@@ -5,6 +5,7 @@ import SupportIcon from "../images/svg/Supporticon.svg";
 import Resicon from "../images/svg/resicon.svg";
 import Power from "../images/svg/powerfulicon.svg";
 import styled from "styled-components";
+import InstallPWA from "./InstallPWA";
 
 const Container = styled.div`
   border-color: #f5f5f7;
@@ -40,6 +41,7 @@ function NavSlide() {
       <SvgLink to="/manage" text="Manage">
         <SupportIcon />
       </SvgLink>
+      <InstallPWA />
     </Container>
   );
 }

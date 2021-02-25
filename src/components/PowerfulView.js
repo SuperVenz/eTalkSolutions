@@ -35,6 +35,7 @@ const Clouds = styled.div`
   right: 22%;
   top: 3%;
 `;
+
 function PowerfulView() {
   const data = useStaticQuery(graphql`
     {
