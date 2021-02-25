@@ -10,6 +10,9 @@ const Button = styled.button`
   padding: 5px;
   background: #287f02;
   color: white;
+  @media (max-width: 600px) {
+    width: 100%;
+  }
 `;
 function InstallPWA() {
   const [supportsPWA, setSupportsPWA] = useState(false);

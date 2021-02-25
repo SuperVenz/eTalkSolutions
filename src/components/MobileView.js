@@ -1,10 +1,11 @@
 import React from "react";
 import styled from "styled-components";
+import InstallPWA from "./InstallPWA";
 import MobileCard from "./MobileCard";
 import MobileContactBanner from "./MobileContactBanner";
 const MobileWrapper = styled.div`
   @media (min-width: 600px) {
-    dispaly: none;
+    display: none;
   }
 `;
 const Tag = styled.footer`
@@ -18,6 +19,7 @@ const Tag = styled.footer`
     justify-content: center;
   }
 `;
+
 function MobileView() {
   return (
     <MobileWrapper>
@@ -27,6 +29,7 @@ function MobileView() {
         text="Give us a call or send an email!"
         button="Contact Us"
       />
+      <InstallPWA />
       <Tag className="tag md:hidden">
         <p>Designed with love, developed with care. </p>
       </Tag>
