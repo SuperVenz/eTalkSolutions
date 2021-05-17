@@ -1,0 +1,14 @@
+[
+  {
+    "tag": "Admin Dashboard",
+    "text": "Use tools you are familiar with like Wordpress or Shopify to edit your apps content on the fly."
+  },
+  {
+    "tag": "Article & Blog Support",
+    "text": "Be able to regularly post blogs and articles to interact with your apps visitors and drive user engagement."
+  },
+  {
+    "tag": "Continuous Intergration",
+    "text": "Update your app anytime without it going down. All updates automatically merge into existing builds."
+  }
+]
