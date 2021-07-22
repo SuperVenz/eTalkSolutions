@@ -13,6 +13,7 @@ module.exports = {
     "gatsby-plugin-react-helmet",
     "gatsby-plugin-next-seo",
     "gatsby-plugin-sitemap",
+
     "gatsby-plugin-offline",
     `gatsby-plugin-transition-link`,
     {
@@ -48,7 +49,7 @@ module.exports = {
         theme_color: `#288002`,
         display: `standalone`,
         icon: "src/images/icon.png",
-        cache_busting_mode: "none",
+        cache_busting_mode: "yes",
         crossOrigin: `use-credentials`, // `use-credentials` or `anonymous`
       },
     },
@@ -80,6 +81,14 @@ module.exports = {
         rule: {
           include: /svg/, // See below to configure properly
         },
+      },
+    },
+    {
+      resolve: `gatsby-plugin-hotjar`,
+      options: {
+        includeInDevelopment: true, // optional parameter to include script in development
+        id: 2405584,
+        sv: 6,
       },
     },
   ],
